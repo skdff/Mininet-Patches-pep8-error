@@ -8,17 +8,17 @@
              │                       │
  --break-system-packages    set -x + pexpect
              │
-	        ▼
+	         ▼
        Mininet install
              │
-                     ▼
+             ▼
       Runtime testing
        sudo mn --test pingall
 
 
         OpenFlow source build
                  │
-                            ▼
+                 ▼
           strlcpy() issues
                  │
         ┌────────┴────────┐
@@ -29,10 +29,10 @@
                  ▼
           make clean
                  │
-                 	 ▼
+               	 ▼
           ./configure
                  │
-                 	 ▼
+               	 ▼
             make -j2
             
             
@@ -57,13 +57,13 @@
           │                                       │
           └──────────────┐              make clean / ownership
                          │                       │
-                         		  ▼                       	  ▼
+             		     ▼                       ▼
                   Mininet installation    ./configure
                          │                       │
                          │                    make -j2
                          │                       │
                          └──────────────┬────────┘
                                         │
-                                       		▼
+                                   		▼
                               Runtime verification
                               sudo mn --test pingall
